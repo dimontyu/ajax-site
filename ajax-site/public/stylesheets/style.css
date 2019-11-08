@@ -1,0 +1,16 @@
+body {
+	background-color:blue;
+  padding: 5px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+p {
+  color: red;
+}
+a,a.button{
+	color:aqua;
+}
+li{
+	color:green;
+	font-size:25px;
+}
