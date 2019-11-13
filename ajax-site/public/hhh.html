@@ -78,16 +78,16 @@
         var poemDisplay = document.querySelector('#divv');
         
 function AupdateDisplay() {   
-       return  updateDisplay('verse1.htm');}
+       return  updateDisplay('/indexp');}
     
        function BupdateDisplay() {   
-       return  updateDisplay('verse2.htm');}
+       return  updateDisplay('verse2.html');}
 	   
 	   function CupdateDisplay() {   
-       return  updateDisplay('verse3.htm');}
+       return  updateDisplay('verse3.html');}
 	   
 	   function DupdateDisplay() {   
-       return  updateDisplay('verse4.htm');}
+       return  updateDisplay('verse4.html');}
 	   
 	    function EupdateDisplay() {   
        return  updateDisplay('./ajax.html');}
@@ -98,13 +98,13 @@ function AupdateDisplay() {
             var url;
             fetch(url).then(function(response) {
 
-                response.text().then(function(htm) {
+                response.text().then(function(html) {
                     
-                    poemDisplay.innerHTML = htm;
+                    poemDisplay.innerHTML = html;
                 });
             }); 
         };
-        updateDisplay('verse1.htm');
+        updateDisplay('verse2.html');
 		
 	verseChoose[0].addEventListener('click',AupdateDisplay);
 	verseChoose[1].addEventListener('click',BupdateDisplay);

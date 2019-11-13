@@ -5,6 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>ajax-site</Name>
     <RootNamespace>ajax-site</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -19,8 +20,8 @@
     <OutputPath>.</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <NodejsPort>1337</NodejsPort>
-    <StartWebBrowser>true</StartWebBrowser>
+    <NodejsPort>3000</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +33,7 @@
     <Content Include="app.js" />
     <Content Include="appp.js" />
     <Content Include="public\ajax.html" />
+    <Content Include="public\glav.html" />
     <Content Include="public\hhh.html" />
     <Content Include="public\images2\ars.jpg" />
     <Content Include="public\images2\Brick_Antique_01.jpg" />
@@ -66,12 +68,41 @@
     <Content Include="public\images\g9.WebP" />
     <Content Include="public\images\tileimage.jpg" />
     <Content Include="public\index.html" />
-    <Content Include="public\noindex.html" />
+    <Content Include="public\main.js" />
+    <Content Include="public\style.css" />
+    <Content Include="public\styles.css" />
     <Content Include="public\stylesheets\style.css" />
-    <Content Include="public\verse1.htm" />
-    <Content Include="public\verse2.htm" />
-    <Content Include="public\verse3.htm" />
-    <Content Include="public\verse4.htm" />
+    <Content Include="public\text\verse1.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\text\verse2.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\text\verse3.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\text\verse4.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\text\verse5.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\text\verse6.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\text\verse7.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\text\verse8.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\text\verse9.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\verse1.html" />
+    <Content Include="public\verse2.html" />
+    <Content Include="public\verse3.html" />
+    <Content Include="public\verse4.html" />
     <Content Include="routes\index.js" />
     <Content Include="routes\models\models.js" />
     <Content Include="routes\models\neon.js" />
@@ -89,6 +120,7 @@
     <Folder Include="public\images2\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
+    <Folder Include="public\text\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="routes\models\" />
